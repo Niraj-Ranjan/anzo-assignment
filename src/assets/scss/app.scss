@@ -1,0 +1,118 @@
+.content {
+  padding: 2rem;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 0.0625rem solid transparent;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    border-radius: 0.3125rem;
+    transition: all 0.2s ease-in-out;
+    margin-left: 15px;
+  }
+  .btn-success {
+    color: #fff;
+    background-color: #00c9a7;
+    border-color: #00c9a7;
+    cursor: pointer;
+  }
+
+  .btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+
+  .custom-select {
+    display: inline-block;
+    height: calc(1.6em + 1.2rem);
+    padding: 0.5rem 1.8rem 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #1e2022;
+    vertical-align: middle;
+    background: #fff
+      url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='%2371869d' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.72,15.78a.75.75,0,0,1-.53.22h-.38a.77.77,0,0,1-.53-.22L6.15,10.64a.5.5,0,0,1,0-.71l.71-.71a.49.49,0,0,1,.7,0L12,13.67l4.44-4.45a.5.5,0,0,1,.71,0l.7.71a.5.5,0,0,1,0,.71Z'/%3E%3C/svg%3E")
+      no-repeat right 0.5rem center/1rem 1rem;
+    border: 0.06rem solid #e7eaf3;
+    border-radius: 0.31rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+.table {
+  margin-left: 3rem;
+  color: #677788;
+}
+table {
+  border-collapse: collapse;
+}
+
+.table thead th {
+  text-align: start;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border: 0.125rem solid rgba(231, 234, 243, 0.7);
+}
+.table th {
+  font-weight: 400;
+}
+.table .thead-light th {
+  color: #677788;
+  background-color: #f8fafd;
+  border-color: rgba(231, 234, 243, 0.7);
+}
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border: 0.0625rem solid rgba(231, 234, 243, 0.7);
+}
+.table th {
+  font-weight: 400;
+}
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border: 0.0625rem solid rgba(231, 234, 243, 0.7);
+}
+
+@media (max-width: 800px) {
+  .form-inline {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+
+    .btn {
+      margin-left: 0rem;
+      margin: 10px 0;
+    }
+    table {
+      margin-left: 0rem;
+      margin: 10px 0;
+    }
+  }
+}

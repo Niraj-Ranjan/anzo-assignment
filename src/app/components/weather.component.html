@@ -1,0 +1,35 @@
+<div class="content">
+  <div class="form-inline">
+    <select [(ngModel)]="selectedCity" class="custom-select">
+      <option disabled>Choose city name</option>
+      <option *ngFor="let city of cityList" [value]="city">{{ city }}</option>
+    </select>
+
+    <button
+      type="button"
+      class="btn btn-success"
+      [disabled]="selectedCity == ''"
+      (click)="getWeatherDataByCityName()"
+    >
+      Submit
+    </button>
+    <div>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">City Name</th>
+            <th scope="col">Weather Description</th>
+            <th scope="col">Temperature</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let weather of weatherDetails">
+            <td>{{ weather.name }}</td>
+            <td>{{ weather.description }}</td>
+            <td>{{ weather.temprature }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
